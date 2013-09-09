@@ -51,3 +51,12 @@ defaults: &amp;defaults
   timeout: 5000
   host: localhost
   &lt;&lt;: *&lt;%= ENV['DB'] || "postgresql" %&gt;
+  
+development:
+  <<: *defaults
+
+test: &test
+  <<: *defaults
+
+production:
+  <<: *defaults

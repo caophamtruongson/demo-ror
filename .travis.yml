@@ -1,4 +1,4 @@
-language: ruby
+anguage: ruby
 rvm:
   - 1.9.2
   - 1.9.3
@@ -6,8 +6,8 @@ env:
   - DB=sqlite
   - DB=mysql
   - DB=postgresql
-script: 
-  - RAILS_ENV=test bundle exec rake db:migrate --trace
+script:
+  - RAILS_ENV=test bundle exec rake --trace db:migrate
   - bundle exec rake db:test:prepare
   - bundle exec rspec spec/
 before_script:
