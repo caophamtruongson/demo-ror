@@ -46,11 +46,11 @@ production:
 cucumber:
   <<: *test
   
-defaults: &amp;defaults
+defaults: &defaults
   pool: 5
   timeout: 5000
   host: localhost
-  &lt;&lt;: *&lt;%= ENV['DB'] || "postgresql" %&gt;
+  <<: *<%= ENV['DB'] || "sqlite" %>
   
 development:
   <<: *defaults
