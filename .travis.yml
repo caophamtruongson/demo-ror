@@ -5,6 +5,11 @@ env:
   - DB=sqlite
 script:
   - bundle install
+  - rake db:test:load
+  - bundle exec rspec ./spec/controllers/users_controller_spec.rb
+  - bundle exec rspec ./spec/models/user_spec.rb
+  - bundle exec rspec ./spec/models/comment_spec.rb
+  - bundle exec rspec ./spec/requests/user_page_spec.rb
 before_install:
   - gem update --system
   - gem --version
