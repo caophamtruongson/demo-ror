@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/mulodo/svn/ror_team_dor/!svn/ver/138/Son%20Hung/Cucumber/02/demo/config/initializers
+END
+mime_types.rb
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/mulodo/svn/ror_team_dor/!svn/ver/138/Son%20Hung/Cucumber/02/demo/config/initializers/mime_types.rb
+END
+sandbox_email_interceptor.rb
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/mulodo/svn/ror_team_dor/!svn/ver/138/Son%20Hung/Cucumber/02/demo/config/initializers/sandbox_email_interceptor.rb
+END
+secret_token.rb
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/mulodo/svn/ror_team_dor/!svn/ver/138/Son%20Hung/Cucumber/02/demo/config/initializers/secret_token.rb
+END
+session_store.rb
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/mulodo/svn/ror_team_dor/!svn/ver/138/Son%20Hung/Cucumber/02/demo/config/initializers/session_store.rb
+END
+inflections.rb
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/mulodo/svn/ror_team_dor/!svn/ver/138/Son%20Hung/Cucumber/02/demo/config/initializers/inflections.rb
+END
+setup_mailer.rb
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/mulodo/svn/ror_team_dor/!svn/ver/138/Son%20Hung/Cucumber/02/demo/config/initializers/setup_mailer.rb
+END
+filter_parameter_logging.rb
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/mulodo/svn/ror_team_dor/!svn/ver/138/Son%20Hung/Cucumber/02/demo/config/initializers/filter_parameter_logging.rb
+END
+backtrace_silencers.rb
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/mulodo/svn/ror_team_dor/!svn/ver/138/Son%20Hung/Cucumber/02/demo/config/initializers/backtrace_silencers.rb
+END
+wrap_parameters.rb
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/mulodo/svn/ror_team_dor/!svn/ver/138/Son%20Hung/Cucumber/02/demo/config/initializers/wrap_parameters.rb
+END

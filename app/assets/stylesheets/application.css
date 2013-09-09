@@ -1,0 +1,107 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+ *= require_self
+ *= require_tree .
+ */
+a {
+	text-decoration: none;
+}
+
+html, body {
+	text-align: center;
+}
+p {
+	text-align: left;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	text-align: left;
+	font-family: "Adobe Garamond Pro Bold", Georgia, "Times New Roman", Times, serif;
+	font-size: 14px;
+	color: #061C37;
+	background: #014D5D url(background.png);
+	background-repeat: repeat-x;
+}
+
+#page {
+	display: block;
+	height: auto;
+	position: relative;
+	overflow: hidden;
+	width: 670px;
+}
+
+.topNavigationLink {
+	text-align: center;
+	position: relative;
+	margin-top: 30px;
+	font-size: 16px;
+	margin-left: -10px;
+	width: 121px;
+	height: 35px;
+	line-height: 35px;
+	float: left;
+	color: #CEEAEE;
+	font-family: "Adobe Garamond Pro Bold", Georgia, "Times New Roman", Times, serif;
+}
+
+.topNavigationLink a {
+	text-decoration: none;
+	color: #CDE2FC;
+}
+
+.topNavigationLink a:hover {
+	text-align: center;
+	border-bottom: none;
+	color: #0C61C9;
+	display: block;
+	width: 121px;
+	height: 35px;
+	line-height: 35px;
+	background-image: url(tab.png);
+}
+
+#mainPicture {
+	width: 670px;
+	height: 345px;
+	background-color: #FFFFFF;
+}
+
+#mainPicture .picture {
+	width: 650px;
+	height: 325px;
+	position: relative;
+	top: 10px;
+	background-image: url(anoceanofsky.jpg);
+	background-repeat: no-repeat;
+}
+
+#headerTitle {
+	position: relative;
+	top: 50px;
+	text-align: left;
+	font-size: 30px;
+	left: 20px;
+	color: #FFFFFF;
+	font-family: "Adobe Garamond Pro Bold", Georgia, "Times New Roman", Times, serif;
+}
+
+#headerSubText {
+	position: relative;
+	top: 50px;
+	left: 20px;
+	text-align: left;
+	font-size: 14px;
+	color: #A9C8FA;
+	font-family: "Adobe Garamond Pro Bold", Georgia, "Times New Roman", Times, serif;
+}

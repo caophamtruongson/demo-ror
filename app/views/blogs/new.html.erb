@@ -1,0 +1,30 @@
+<%= link_to 'Back', blogs_path %>
+<p>
+	<%= @user.id%>
+</p>
+<%= form_for :blog, url: blogs_path do |f| %>
+
+	<% if @blog.errors.any? %>
+		<div id="errorExplanation">
+			<h2><%= pluralize(@blog.errors.count, "error")%> prohibited
+      this post from being saved:</h2>
+      		<ul>
+      			<% @blog.errors.full_messages.each do |msg| %>
+      				<li><%= msg%></li>
+      			<% end %>
+      		</ul>
+		</div>
+	<% end %>
+
+	<p>
+		<%= f.label :title%>
+		<%= f.text_field :title%>
+	</p>
+	<p>
+		<%= f.label :content%>
+		<%= f.text_area :content%>
+	</p>
+	<p>
+		<%= f.submit%>
+	</p>
+<% end %>

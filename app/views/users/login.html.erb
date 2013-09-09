@@ -1,0 +1,17 @@
+<p>Sign In</p>
+
+<%= form_for :users, url: {action:'login'} do %>
+<p>
+	<%= t :username %>
+	<%= text_field_tag('user[username]',(cookies[:username]?cookies[:username]:''))%>
+</p>
+<p>
+	<%= t :password %>
+	<%= password_field_tag('user[password]',(cookies[:password]?cookies[:password]:''))%>
+</p>
+<p>
+	<%= t :remember %>
+	<%= check_box_tag 'user[remember]',1,(cookies[:remember]?true:false) %>
+</p>
+<%= submit_tag "Login" %>
+<% end %>
