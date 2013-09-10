@@ -8,7 +8,21 @@ script:
   - bundle install
   - rake db:migrate
   - rake db:test:load
+  
+  # RSpec
+  
   - bundle exec rspec ./spec/controllers/users_controller_spec.rb
+  - bundle exec rspec ./spec/models/comment_spec.rb
+  - bundle exec rspec ./spec/models/user_spec.rb
+  - bundle exec rspec ./spec/requests/users_page_spec.rb
+  
+  # Cucumber
+  
+  - bundle exec cucumber ./features/users/login.feature
+  - bundle exec cucumber ./features/users/register.feature
+  - bundle exec cucumber ./features/users/comment.feature
+  - bundle exec cucumber ./features/users/blog.feature
+  - bundle exec cucumber ./features/users/database_user.feature
 before_install:
   #- gem update --system
   - gem --version
