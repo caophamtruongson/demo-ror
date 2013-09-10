@@ -20,7 +20,7 @@ script:
   
   # Cucumber
   
-   - cucumber ./features/users/login.feature
+   - rake cucumber ./features/users/login.feature
   # - bundle exec cucumber ./features/users/register.feature
   # - bundle exec cucumber ./features/users/comment.feature
   # - bundle exec cucumber ./features/users/blog.feature
