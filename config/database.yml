@@ -45,18 +45,3 @@ production:
 
 cucumber:
   <<: *test
-  
-defaults: &defaults
-  pool: 5
-  timeout: 5000
-  host: localhost
-  <<: *<%= ENV['DB'] || "sqlite" %>
-  
-development:
-  <<: *defaults
-
-test: &test
-  <<: *defaults
-
-production:
-  <<: *defaults
