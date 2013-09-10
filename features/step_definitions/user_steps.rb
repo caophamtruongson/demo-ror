@@ -41,7 +41,7 @@ def register_user
 end
 
 def comment_user
-  visit "/users/#{user.id}"
+  visit "/users/1"
   fill_in "comment[commenter]", :with => @arr[:title]
   fill_in "comment[body]", :with => @arr[:content]
   click_button "Create Comment"
@@ -154,7 +154,6 @@ end
 
 When(/^I comment with valid credentials$/) do
   #pending # express the regexp above with the code you wish you had
-  create_user
   create_arr_comment
   comment_user
 end
@@ -166,7 +165,6 @@ end
 
 When(/^I comment with a wrong title$/) do
   #pending # express the regexp above with the code you wish you had
-  create_user
   create_arr_comment
   @arrcomment = @arrcomment.merge(:title => "")
   comment_user
@@ -179,7 +177,6 @@ end
 
 When(/^I comment with a wrong content$/) do
   #pending # express the regexp above with the code you wish you had
-  create_user
   create_arr_comment
   @arrcomment = @arrcomment.merge(:content => "")
   comment_user
