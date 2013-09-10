@@ -6,8 +6,8 @@ env:
 script:
   #- gem install debugger -v '1.6.1'
   - bundle install
-  #- rake db:migrate
-  #- rake db:test:load
+  - rake db:migrate
+  - rake db:test:load
 before_install:
   #- gem update --system
   - gem --version
