@@ -5,9 +5,26 @@ env:
   - DB=sqlite
 script:
   - gem install debugger -v '1.6.1'
+  - rails g rspec:install
+  - rails g cucumber:install
   - bundle install
   - rake db:migrate
   - rake db:test:load
+  
+  # RSpec
+  
+  - bundle exec rspec ./spec/controllers/users_controller_spec.rb
+  - bundle exec rspec ./spec/models/comment_spec.rb
+  - bundle exec rspec ./spec/models/user_spec.rb
+  - bundle exec rspec ./spec/requests/users_page_spec.rb
+  
+  # Cucumber
+  
+  - rake cucumber ./features/users/login.feature
+  - rake cucumber ./features/users/register.feature
+  - rake cucumber ./features/users/comment.feature
+  - rake cucumber ./features/users/blog.feature
+  - rake cucumber ./features/users/database_user.feature
 before_install:
   #- gem update --system
   - gem --version
